@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="_include">
+      <UniqueIdentifier>{40c43162-ad76-4cf7-9c40-097b51eec979}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="app">
+      <UniqueIdentifier>{23b64406-3f83-4ea2-b1cb-fe8525f9676c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic">
+      <UniqueIdentifier>{5a31901b-9844-417c-a889-3d44cd6f62bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logs">
+      <UniqueIdentifier>{9974c2cc-f8c9-4867-9065-7d88f94499ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="misc">
+      <UniqueIdentifier>{5dcc721e-4d8f-489e-a443-2e302c71b32e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net">
+      <UniqueIdentifier>{bcfa5922-b3e7-4ec8-9cb7-e22d7e38e02a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proc">
+      <UniqueIdentifier>{4b0cca93-0aba-4d1b-8c6f-924857e81cf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="signal">
+      <UniqueIdentifier>{058dd9c2-e91e-4b48-9095-966395655790}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="_include\ngx_c_conf.h">
+      <Filter>_include</Filter>
+    </ClInclude>
+    <ClInclude Include="_include\ngx_c_crc32.h">
+      <Filter>_include</Filter>
+    </ClInclude>
+    <ClInclude Include="_include\ngx_c_lockmutex.h">
+      <Filter>_include</Filter>
+    </ClInclude>
+    <ClInclude Include="_include\ngx_c_memory.h">
+      <Filter>_include</Filter>
+    </ClInclude>
+    <ClInclude Include="_include\ngx_c_slogic.h">
+      <Filter>_include</Filter>
+    </ClInclude>
+    <ClInclude Include="_include\ngx_c_socket.h">
+      <Filter>_include</Filter>
+    </ClInclude>
+    <ClInclude Include="_include\ngx_c_threadpool.h">
+      <Filter>_include</Filter>
+    </ClInclude>
+    <ClInclude Include="_include\ngx_comm.h">
+      <Filter>_include</Filter>
+    </ClInclude>
+    <ClInclude Include="_include\ngx_func.h">
+      <Filter>_include</Filter>
+    </ClInclude>
+    <ClInclude Include="_include\ngx_global.h">
+      <Filter>_include</Filter>
+    </ClInclude>
+    <ClInclude Include="_include\ngx_logiccomm.h">
+      <Filter>_include</Filter>
+    </ClInclude>
+    <ClInclude Include="_include\ngx_macro.h">
+      <Filter>_include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="app\nginx.cxx">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="app\ngx_c_conf.cxx">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="app\ngx_log.cxx">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="app\ngx_printf.cxx">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="app\ngx_setproctitle.cxx">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="app\ngx_string.cxx">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\ngx_c_slogic.cxx">
+      <Filter>logic</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\ngx_c_crc32.cxx">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\ngx_c_memory.cxx">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\ngx_c_threadpool.cxx">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="net\ngx_c_socket.cxx">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\ngx_c_socket_accept.cxx">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\ngx_c_socket_conn.cxx">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\ngx_c_socket_inet.cxx">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\ngx_c_socket_request.cxx">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\ngx_c_socket_time.cxx">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="signal\ngx_signal.cxx">
+      <Filter>signal</Filter>
+    </ClCompile>
+    <ClCompile Include="proc\ngx_daemon.cxx">
+      <Filter>proc</Filter>
+    </ClCompile>
+    <ClCompile Include="proc\ngx_event.cxx">
+      <Filter>proc</Filter>
+    </ClCompile>
+    <ClCompile Include="proc\ngx_process_cycle.cxx">
+      <Filter>proc</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

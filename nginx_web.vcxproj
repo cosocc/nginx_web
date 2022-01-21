@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{cc0dde14-c476-464a-9c4b-b2e6abbe5587}</ProjectGuid>
+    <Keyword>Linux</Keyword>
+    <RootNamespace>nginx_web</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Generic</TargetLinuxPlatform>
+    <LinuxProjectType>{2238F9CD-F817-4ECC-BD14-2524D2669B35}</LinuxProjectType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <ClInclude Include="_include\ngx_comm.h" />
+    <ClInclude Include="_include\ngx_c_conf.h" />
+    <ClInclude Include="_include\ngx_c_crc32.h" />
+    <ClInclude Include="_include\ngx_c_lockmutex.h" />
+    <ClInclude Include="_include\ngx_c_memory.h" />
+    <ClInclude Include="_include\ngx_c_slogic.h" />
+    <ClInclude Include="_include\ngx_c_socket.h" />
+    <ClInclude Include="_include\ngx_c_threadpool.h" />
+    <ClInclude Include="_include\ngx_func.h" />
+    <ClInclude Include="_include\ngx_global.h" />
+    <ClInclude Include="_include\ngx_logiccomm.h" />
+    <ClInclude Include="_include\ngx_macro.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="app\nginx.cxx" />
+    <ClCompile Include="app\ngx_c_conf.cxx" />
+    <ClCompile Include="app\ngx_log.cxx" />
+    <ClCompile Include="app\ngx_printf.cxx" />
+    <ClCompile Include="app\ngx_setproctitle.cxx" />
+    <ClCompile Include="app\ngx_string.cxx" />
+    <ClCompile Include="logic\ngx_c_slogic.cxx" />
+    <ClCompile Include="misc\ngx_c_crc32.cxx" />
+    <ClCompile Include="misc\ngx_c_memory.cxx" />
+    <ClCompile Include="misc\ngx_c_threadpool.cxx" />
+    <ClCompile Include="net\ngx_c_socket.cxx" />
+    <ClCompile Include="net\ngx_c_socket_accept.cxx" />
+    <ClCompile Include="net\ngx_c_socket_conn.cxx" />
+    <ClCompile Include="net\ngx_c_socket_inet.cxx" />
+    <ClCompile Include="net\ngx_c_socket_request.cxx" />
+    <ClCompile Include="net\ngx_c_socket_time.cxx" />
+    <ClCompile Include="proc\ngx_daemon.cxx" />
+    <ClCompile Include="proc\ngx_event.cxx" />
+    <ClCompile Include="proc\ngx_process_cycle.cxx" />
+    <ClCompile Include="signal\ngx_signal.cxx" />
+  </ItemGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Link>
+      <LibraryDependencies>pthread</LibraryDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Link>
+      <LibraryDependencies>pthread</LibraryDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
