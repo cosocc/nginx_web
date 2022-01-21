@@ -105,7 +105,6 @@
     <ClCompile Include="net\ngx_c_socket_inet.cxx" />
     <ClCompile Include="net\ngx_c_socket_request.cxx" />
     <ClCompile Include="net\ngx_c_socket_time.cxx" />
-    <ClCompile Include="none.c" />
     <ClCompile Include="proc\ngx_daemon.cxx" />
     <ClCompile Include="proc\ngx_event.cxx" />
     <ClCompile Include="proc\ngx_process_cycle.cxx" />

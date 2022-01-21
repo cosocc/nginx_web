@@ -125,8 +125,5 @@
     <ClCompile Include="proc\ngx_process_cycle.cxx">
       <Filter>proc</Filter>
     </ClCompile>
-    <ClCompile Include="none.c">
-      <Filter>logs</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>
