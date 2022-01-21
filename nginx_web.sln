@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "nginx_web", "nginx_web.vcxproj", "{CC0DDE14-C476-464A-9C4B-B2E6ABBE5587}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFCApplication4", "MFCApplication4\MFCApplication4\MFCApplication4.vcxproj", "{8F710507-4CED-40CB-B92C-D7B91916B028}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM
@@ -41,6 +43,18 @@ Global
 		{CC0DDE14-C476-464A-9C4B-B2E6ABBE5587}.Release|x86.ActiveCfg = Release|x86
 		{CC0DDE14-C476-464A-9C4B-B2E6ABBE5587}.Release|x86.Build.0 = Release|x86
 		{CC0DDE14-C476-464A-9C4B-B2E6ABBE5587}.Release|x86.Deploy.0 = Release|x86
+		{8F710507-4CED-40CB-B92C-D7B91916B028}.Debug|ARM.ActiveCfg = Debug|Win32
+		{8F710507-4CED-40CB-B92C-D7B91916B028}.Debug|ARM64.ActiveCfg = Debug|Win32
+		{8F710507-4CED-40CB-B92C-D7B91916B028}.Debug|x64.ActiveCfg = Debug|x64
+		{8F710507-4CED-40CB-B92C-D7B91916B028}.Debug|x64.Build.0 = Debug|x64
+		{8F710507-4CED-40CB-B92C-D7B91916B028}.Debug|x86.ActiveCfg = Debug|Win32
+		{8F710507-4CED-40CB-B92C-D7B91916B028}.Debug|x86.Build.0 = Debug|Win32
+		{8F710507-4CED-40CB-B92C-D7B91916B028}.Release|ARM.ActiveCfg = Release|Win32
+		{8F710507-4CED-40CB-B92C-D7B91916B028}.Release|ARM64.ActiveCfg = Release|Win32
+		{8F710507-4CED-40CB-B92C-D7B91916B028}.Release|x64.ActiveCfg = Release|x64
+		{8F710507-4CED-40CB-B92C-D7B91916B028}.Release|x64.Build.0 = Release|x64
+		{8F710507-4CED-40CB-B92C-D7B91916B028}.Release|x86.ActiveCfg = Release|Win32
+		{8F710507-4CED-40CB-B92C-D7B91916B028}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
